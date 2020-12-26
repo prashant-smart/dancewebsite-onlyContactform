@@ -1,0 +1,57 @@
+extends base.pug
+
+block scripts
+    script(src='../static/index.js')
+
+block  style
+    style  
+        include ../static/style.css
+
+block content
+    section#introsection
+            div
+                h1
+                    |Prash Dance Academy
+                h2 
+                    |eat sleep DANCE repeat    
+    section#ourmissionsection
+            h1
+                |Our Mission
+            div#container1
+                div.box
+                    h2
+                        |Dance Performance
+                    img(src="/static/dance_1_edit.png", alt="")   
+                    p
+                        |This is the best academy of universe
+                div.box        
+                    h2
+                        |Dance the way You Like
+                    img(src="/static/dance_3.png", alt="")   
+                    p
+                        |This is the best academy of universe
+                div.box        
+                    h2
+                        |Expert Teaching
+                    img(src="/static/dance_2.png", alt="")   
+                    p
+                        |This is the best academy of universe 
+    section#sponsorsection
+            h1
+                |Our sponsor
+            div#container2    
+                div.box1
+                    
+                    img(src="/static/tesla_logo.png", alt="")   
+                   
+                div.box1        
+                   
+                    img(src="/static/microsoft_logo.png", alt="")   
+                   
+                div.box1        
+                    
+                    img(src="/static/hp_logo.png", alt="")   
+                div.box1        
+                    
+                    img(src="/static/apple_logo.png", alt="")
+                    
