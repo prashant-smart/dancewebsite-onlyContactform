@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container2{
+    display: flex;
+    margin-top: -6px;
+    justify-content: center;
+    flex-direction: column;
+    
+    height: 79vh;
+}
+H1{ font-family: 'Grandstander', cursive;
+    position: relative;
+    font-size: 4rem;
+    top: -3rem;
+    color: #0e3742;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+     /* -----------> isse text reflection bnti hai    */
+    -webkit-box-reflect:below 2px linear-gradient(transparent,#0004) ;
+    line-height: 0.70em;
+    /* -------->outline  none krny se  jab ham text ko select kregy toh bass blue blue hi najar ayega but out line najar nhi ayegi jaise ek block element mai hota hai            */
+    outline: none;
+    animation:kartik 5s linear infinite;}
+    @keyframes kartik{
+        0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+            color: #0e3742;
+            text-shadow: none;
+        }
+       18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
+            text-shadow:
+             0 0 10px #03bcf4,
+             0 0 20px #03bcf4,
+             0 0 40px #03bcf4,
+             0 0 80px #03bcf4,
+             0 0 160px #03bcf4;
+
+            color: #fff;
+        }
+        
+
+    }
+
+#form{    
+    position: relative;
+    top: 21px;
+    border-radius: 14px;
+    align-self: center;
+    display: flex;
+    /* margin-top: 49px; */
+    justify-content: center;
+    flex-direction: column;
+    height: 17rem;
+    width: 38%;
+    box-shadow: 0px 0px 45px black;
+}
+#form input{
+    border: none;
+    box-shadow: 0px 0px 23px black;
+    font-family: 'Grandstander', cursive;
+    align-self: center;
+    width: 62%;
+    text-align: center;
+    height: 13%;
+    margin: 10px;
+    border-radius: 40px;
+    outline: none;
+}
+#form input:hover{
+    color:white;
+    background-image: linear-gradient(to right,#b5e070,#c09ed0);
+}
+#btn{font-family: 'Grandstander', cursive;
+    width: 17%;
+    align-self: center;
+    height: 11%;
+    border:none;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 21px;
+    position: relative;
+    top: 10px;
+    outline: none;
+    box-shadow: 0px 0px 29px black;
+}
+#btn:hover{
+    background-image: linear-gradient(to right,#a517ba,#c09ed0);
+}
+
+#footer{
+    background-image: linear-gradient(to right,rgb(29, 29, 31),rgba(74, 74, 77, 0.815));
+    position: relative;
+   
+    text-align: center;
+    color: white;
+    height: 49px;
+    top: 17px;
+}
+
+.myForm{
+    /* background-color: red; */
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+}
